@@ -1,1 +1,1 @@
-# TOP-dashboard
+The Odin Project dashboard project using CSS grid 
