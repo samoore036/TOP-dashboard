@@ -5,9 +5,159 @@
         <meta name="viewport" content="width=device-width">
         <title>Admin Dashboard</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="theme-script.js" defer></script>
     </head>
 
     <body>
+        <div id="main-container">
+            <div id="side-bar" class="container">
+                <ul id="dashboard">
+                    <li>
+                        <a href="index.html"><img class="light-img" src="images/view-dashboard.png"><img class="dark-img" src="images/view-dashboard-dark.png"><span>Dashboard</span></a>
+                    </li>
+                </ul>
 
+                <ul class="dashboard-list">
+                    <li><a href="index.html"><img class="light-img" src="images/home.png"><img class="dark-img" src="images/home-dark.png"><span>Home</span></a></li>
+                    <li><a href="index.html"><img class="light-img" src="images/account.png"><img class="dark-img" src="images/account-dark.png"><span>Profile</span></a></li>
+                    <li><a href="index.html"><img class="light-img" src="images/message-reply.png"><img class="dark-img" src="images/message-reply-dark.png"><span>Messages</span></a></li>
+                    <li><a href="index.html"><img class="light-img" src="images/history.png"><img class="dark-img" src="images/history-dark.png"><span>History</span></a></li>
+                    <li><a href="index.html"><img class="light-img" src="images/tasks.png"><img class="dark-img" src="images/tasks-dark.png"><span>Tasks</span></a></li>
+                    <li><a href="index.html"><img class="light-img" src="images/community.png"><img class="dark-img" src="images/community-dark.png"><span>Communities</span></a></li>
+                </ul>
+
+            
+                <ul class="dashboard-list">
+                    <li><a href="index.html"><img class="light-img" src="images/settings.png"><img class="dark-img" src="images/settings-dark.png"><span>Settings</span></a></li>
+                    <li><a href="index.html"><img class="light-img" src="images/support.png"><img class="dark-img" src="images/support-dark.png"><span>Support</span></a></li>
+                    <li><a href="index.html"><img class="light-img" src="images/privacy.png"><img class="dark-img" src="images/privacy-dark.png"><span>Privacy</span></a></li>
+                </ul>
+            </div>
+
+            <div id="top-bar" class="container">
+                <div id="top-half">
+                    <div id="search-bar-div">
+                        <label id="search-icon" for="search"><img class="light-img" src="images/search.png"><img class="dark-img" src="images/search-dark.png"></label>
+                        <input type="text" id="search">
+                    </div>
+                    <div id="icon-div">
+                        <button id="theme-toggle"><img class="light-img" id="theme-light" src="images/theme-toggle.png"><img class="dark-img" id="theme-dark" src="images/theme-toggle-dark.png"></button>
+                        <a href="https://github.com/samoore036"><img class="light-img" src="images/github.png"><img class="dark-img" src="images/github-dark.png"></a>
+                    </div>
+                </div>
+
+                <div id="bottom-half">
+                    <div id="top-div">
+                        <h4><img id="top" class="light-img" src="images/top.png"><img class="dark-img" src="images/top-dark.png">The Odin Project</h4>
+                    </div>
+
+                    <div id="buttons">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main-content" class="container">
+                <h2>Projects</h2>
+                <div id="content-container">
+                    <div class="content border-shadow-div">
+                        <h3>Calculator</h3>
+                        <img class="content-img" src="images/calculator-screenshot.png">
+                        <p>Basic calculator written in JavaScript with mouse and keyboard functionality.</p>
+                        <div class="icon-tray">
+                            <a href="https://samoore036.github.io/TOP-calculator/"><img class="light-img" class="content-icon" src="images/eye.png"><img class="dark-img" src="images/eye-dark.png"></a>
+                            <a href="https://github.com/samoore036/TOP-calculator"><img class="light-img" class="content-icon" src="images/github.png"><img class="dark-img" src="images/github-dark.png"></a>
+                        </div>
+                    </div>
+
+                    <div class="content border-shadow-div">
+                        <h3>Sign-Up Form</h3>
+                        <img class="content-img" src="images/form-screenshot.png">
+                        <p>A mock sign-up form with JavaScript input validation using eager validation.</p>
+                        <div class="icon-tray">
+                            <a href="https://samoore036.github.io/TOP-form/"><img class="light-img" src="images/eye.png"><img class="dark-img" src="images/eye-dark.png"></a>
+                            <a href="https://github.com/samoore036/TOP-form"><img class="light-img" src="images/github.png"><img class="dark-img" src="images/github-dark.png"></a>
+                        </div>
+                    </div>
+
+                    <div class="content border-shadow-div">
+                        <h3>Etch-A-Sketch</h3>
+                        <img class="content-img" src="images/etchasketch-screenshot.png">
+                        <p>Pixel grid etch-a-sketch written in JavaScript with different modes.</p>
+                        <div class="icon-tray">
+                            <a href="https://samoore036.github.io/TOP-etch-a-sketch/"><img class="light-img" src="images/eye.png"><img class="dark-img" src="images/eye-dark.png"></a>
+                            <a href="https://github.com/samoore036/TOP-etch-a-sketch"><img class="light-img" src="images/github.png"><img class="dark-img" src="images/github-dark.png"></a>
+                        </div>
+                    </div>
+
+                    <div class="content border-shadow-div">
+                        <h3>Rock Paper Scissors</h3>
+                        <img class="content-img" src="images/rps-screenshot.png">
+                        <p>A Rock Paper Scissors game written in JavaScript against a computer.</p>
+                        <div class="icon-tray">
+                            <a href="https://samoore036.github.io/TOP-rock-paper-scissors/"><img class="light-img" src="images/eye.png"><img class="dark-img" src="images/eye-dark.png"></a>
+                            <a href="https://github.com/samoore036/TOP-rock-paper-scissors"><img class="light-img" src="images/github.png"><img class="dark-img" src="images/github-dark.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="java-bar" class="container">
+                    <h2>Java Projects</h2>
+                    <div class="links border-shadow-div">
+                        <div class="link-div border-line-div">
+                            <h4><a href="https://github.com/samoore036/Java-Exercises-and-Projects/tree/main/BattleShipJetBrains">Battle Ship</a></h4>
+                            <p>Uses 2D arrays. Ships are placed by two players.</p>
+                        </div>
+    
+                        <div class="link-div border-line-div">
+                            <h4><a href="https://github.com/samoore036/Java-Exercises-and-Projects/tree/main/TheaterSeatManager">Theater Seat Manager</a></h4>
+                            <p>Uses a 2d array to buy tickets. Shows statistics on available/purchased seats.</p>
+                        </div>
+
+                        <div class="link-div">
+                            <h4><a href="https://github.com/samoore036/Java-Exercises-and-Projects/tree/main/TicTacToe">Tic Tac Toe</a></h4>
+                            <p>Tic Tac Toe game between two players.</p>
+                        </div>
+                    </div>
+
+                    <h2>Java Exercises</h2>
+                    <div class="links border-shadow-div">
+                        <div class="link-div border-line-div">
+                            <h4><a href="https://github.com/samoore036/Java-Exercises-and-Projects/tree/main/AnagramCheck">Anagram Check</a></h4>
+                            <p>Checks if a given word is an anagram of another word.</p>
+                        </div>
+    
+                        <div class="link-div border-line-div">
+                            <h4><a href="https://github.com/samoore036/Java-Exercises-and-Projects/tree/main/CharWithMostAppearances">Most Frequent Char</a></h4>
+                            <p>Finds the char with the most occurences of a given string as well as the count of occurences.</p>
+                        </div>
+    
+                        <div class="link-div border-line-div">
+                            <h4><a href="https://github.com/samoore036/Java-Exercises-and-Projects/tree/main/CountingVowelsandConsonants">Vowel and Consonant Count</a></h4>
+                            <p>Counts the amount of vowels and consonants of a given string.</p>
+                        </div>
+    
+                        <div class="link-div border-line-div">
+                            <h4><a href="https://github.com/samoore036/Java-Exercises-and-Projects/tree/main/LongestCommonPrefix">Longest Common Prefix</a></h4>
+                            <p>Finds the longest common prefix among an array of strings.</p>
+                        </div>
+    
+                        <div class="link-div border-line-div">
+                            <h4><a href="https://github.com/samoore036/Java-Exercises-and-Projects/tree/main/RemoveDuplicateChars">Remove Duplicate Chars</a></h4>
+                            <p>Removes all duplicate chars from a given string.</p>
+                        </div>
+    
+                        <div class="link-div">
+                            <h4><a href="https://github.com/samoore036/Java-Exercises-and-Projects/tree/main/WorldPopulation">World Population Data</a></h4>
+                            <p>Finds the largest population increase compared to the previous year using stream functions. Sourced from UN population data 1950-2016.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
     </body>
 </html>
